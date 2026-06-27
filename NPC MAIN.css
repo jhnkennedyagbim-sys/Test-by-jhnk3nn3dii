@@ -1,0 +1,386 @@
+:root {
+  --green: rgb(51, 207, 51);
+  --light-grey: rgb(211, 211, 211);
+  --black: rgb(0, 0, 0);
+  --dark-grey: rgb(83, 83, 83);
+  --white: rgb(255, 255, 255);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+header {
+  background-color: var(--light-grey);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+#flexcon2 {
+  display: flex;
+  gap: 30px;
+}
+#shoppingbag {
+  width: 30px;
+  height: 30px;
+}
+
+.navlink {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: var(--black);
+  text-decoration: none;
+}
+.active {
+  font-weight: bold;
+  border-bottom: 1px solid var(--black);
+}
+#logo {
+  font-weight: bold;
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--black);
+}
+/*Main page banner section 
+.............................*/
+#banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding: 80px;
+}
+#leftbanner {
+  width: 40%;
+}
+#rightbanner {
+  width: 50%;
+}
+#rightbannerimg {
+  width: 100%;
+}
+h1 {
+  font-size: 7rem;
+  font-family: "Anton", sans-serif;
+  font-weight: 500px;
+  line-height: 1.1;
+}
+.infotext {
+  color: var(--dark-grey);
+  max-width: 40ch;
+  margin: 20px 0;
+}
+.dgbtn {
+  background-color: var(--black);
+  color: var(--green);
+  padding: 15px 30px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.dgbtn:hover {
+  background-color: var(--green);
+  color: var(--black);
+}
+/* individual card featured sec */
+#featured {
+  margin: 80px;
+}
+.sectionheading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+#cardcontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 80%;
+  margin: auto;
+  gap: 20px;
+}
+.cardimg {
+  width: 100%;
+}
+.card {
+  border-radius: 7px;
+  overflow: hidden;
+  border: 1px solid var(--light-grey);
+}
+.bottomcard {
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--white);
+}
+.shoename {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.cardprice {
+  color: var(--black);
+  font-size: 0.9rem;
+}
+.cardbtn {
+  background-color: var(--black);
+  color: var(--green);
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+/* advertisment section */
+#advertisement {
+  margin: 80px 0 0 0;
+}
+#advertisementcon {
+  background: url(css-course-website-main/img/advertisment.png);
+  height: 500px;
+  width: 80%;
+  margin: auto;
+  border-radius: 25px;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 60px;
+}
+#advertisementheading {
+  color: var(--white);
+  font-family: "Anton", sans-serif;
+  font-size: 4rem;
+  line-height: 1.1;
+  font-weight: 400px;
+  max-width: 20ch;
+}
+#advertisementtext {
+  color: rgb(199, 198, 198);
+  margin: 20px 0;
+  max-width: 50ch;
+}
+.adbtn {
+  width: fit-content;
+  padding: 15px 30px;
+  background-color: var(--green);
+  color: var(--black);
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: all 1s ease;
+}
+.adbtn:hover {
+  background-color: var(--dark-grey);
+  color: var(--white);
+}
+footer a {
+  text-decoration: none;
+}
+footer a img {
+  width: 25px;
+  height: 25px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 40px 0;
+}
+/* ABOUT PAGE
+......................................... */
+#aboutbanner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding: 80px;
+}
+#leftaboutbanner {
+  width: 40%;
+}
+#rightaboutbanner {
+  width: 50%;
+}
+#rightaboutbanner img {
+  width: 100%;
+}
+#missioncon {
+  width: 80%;
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-between;
+}
+#missionleftcon {
+  width: 40%;
+}
+#misionrightcon {
+  width: 50%;
+}
+#missionrightcon img {
+  width: 100%;
+}
+#missionheading {
+  font-size: 1rem;
+}
+#missionsubheading {
+  font-size: 2.5rem;
+  font-weight: 600px;
+  margin: 20px 0;
+}
+#missioninfo {
+  color: var(--dark-grey);
+  max-width: 40ch;
+}
+#iconcon {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  margin: 20px;
+}
+.iconcard {
+}
+.iconimg {
+  width: 25px;
+  height: 25px;
+}
+.iconheading {
+  font-weight: bold;
+  margin: 10px 0;
+}
+.iconinfo {
+  color: var(--dark-grey);
+}
+/* contact page........
+...................... */
+#contacticoncard img {
+  width: 20px;
+  height: 20px;
+}
+#contacticoncard {
+  display: flex;
+  gap: 25px;
+}
+
+#contactcon {
+  display: flex;
+  width: 80%;
+  margin: 80px auto;
+  justify-content: space-between;
+}
+#leftconcon {
+  width: 40%;
+}
+#rightconcon {
+  width: 40%;
+}
+#conheading {
+  font-size: 4rem;
+}
+#contextinfo {
+  color: var(--black);
+  line-height: 1.1;
+}
+#contactinfocon {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.coninput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--light-grey);
+  border-radius: 7px;
+  outline: none;
+  margin-bottom: 17px;
+}
+.conlabel {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  display: block;
+}
+.contextarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--light-grey);
+  border-radius: 7px;
+  outline: none;
+  margin-bottom: 17px;
+  height: 200px;
+}
+/* media Quary */
+@media screen and (max-width: 700px) {
+  /* contact us page */
+  #contactcon {
+    flex-direction: column;
+    gap: 40px;
+  }
+  #leftconcon {
+    width: 100%;
+  }
+  #rightconcon {
+    width: 100%;
+  }
+  /* about page */
+  #aboutbanner {
+    flex-direction: column;
+    gap: 50px;
+  }
+  #leftaboutbanner {
+    width: 100%;
+    text-align: center;
+  }
+  .infotext {
+    margin: 20px auto;
+  }
+  #rightaboutbaner {
+    width: 100%;
+    text-align: center;
+  }
+  #missioncon {
+    flex-direction: column;
+    gap: 40px;
+  }
+  #missionleftcon {
+    width: 100%;
+  }
+  #missionrightcon {
+    width: 100%;
+  }
+  #advertisementheading {
+    font-size: 2rem;
+  }
+  #advertisementtext {
+    max-width: 30ch;
+  }
+}
+/* home page */
+@media screen and (max-width: 1300px) {
+  #banner {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  .infotext {
+    margin: 20px auto;
+  }
+  #leftbanner {
+    width: 100%;
+  }
+  #rightbanner {
+    width: 100%;
+  }
+}
